@@ -1,0 +1,31 @@
+# change focus
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
+# shift window in current workspace
+# alt + shift - h : yabai -m window --swap west
+# alt + shift - j : yabai -m window --swap south
+# alt + shift - k : yabai -m window --swap north
+# alt + shift - l : yabai -m window --swap east
+# resize window
+alt + shift - h : yabai -m window --resize left:-20:0
+alt + shift - l : yabai -m window --resize left:20:0
+# balance size of windows
+alt + shift - 0 : yabai -m space --balance
+# set insertion point in focused container
+alt + ctrl - h : yabai -m window --swap west
+alt + ctrl - j : yabai -m window --swap south
+alt + ctrl - k : yabai -m window --swap north
+alt + ctrl - l : yabai -m window --swap east
+# mirror tree x-axis
+alt + shift - x : yabai -m space --mirror x-axis
+# mirror tree y-axis
+alt + shift - y : yabai -m space --mirror y-axis
+# toggle window zoom
+alt - d : yabai -m window --toggle zoom-parent
+# enter fullscreen mode for the focused container
+alt - f : yabai -m window --toggle zoom-fullscreen
+# toggle whether the focused window should be tiled (only on bsp spaces)
+alt + shift - f : yabai -m window --toggle float
+
